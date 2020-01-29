@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style/styles.css" />
+    <title>Lounari</title>
   </head>
   <body>
-    <p>Yeah!</p>
+    <!-- Navbar & search input -->
+    <nav class="container">
+      <ul>
+        <li><a href="">Etusivu</a></li>
+        <li><a href="">Ruokalistat</a></li>
+        <li><a href="">Ravintolat</a></li>
+        <li><a href="">Yhteystiedot</a></li>
+      </ul>
+
+      <span>
+        <input id="haku" placeholder="Hae ravintolan nimellä" />
+      </span>
+    </nav>
+    <!-- Main banner -->
+    <header class="container" id="banner">
+        <div id="banner-text">
+        <p>Lounari.<br />Missä tänään syötäisiin.</p>
+        </div>
+
+        <div id="banner-img">
+            <div id="triangle"></div>
+
+        </div>
+
+    </header>
+    <!-- Text under main banner -->
+    <aside class="container">
+      <p>
+        Missä tänään syötäisiin? Tuttu tarina ennen lounashetkeä.<br />
+        Palvelu etsii lähelläsi olevat lounaspaikat, sekä näyttää niiden
+        päivittäisen lounaslistan.<br />
+        Viikottaiset lounaslistat ovat myös käytettävissäsi. Pääset niihin
+        klikkaamalla ravintolan logoa.
+      </p>
+    </aside>
+    <!-- Restaurant boxes -->
+    <section class="container">
+      <article class="box">
+        <p>Ravintola 1</p>
+      </article>
+      <article class="box">
+        <p>Ravintola 2</p>
+      </article>
+    </section>
   </body>
 </html>

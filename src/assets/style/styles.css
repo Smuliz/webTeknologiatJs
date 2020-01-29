@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: brown;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  padding: 0.5rem 1rem;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  align-content: center;
+  list-style-type: none;
+}
+
+li a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0 0.25rem;
+  padding: 0.6rem;
+  font-weight: bold;
+}
+
+input {
+  box-sizing: border-box;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  height: 2.3rem;
+  width: 15rem;
+  padding-left: 0.1rem;
+}
+
+input::placeholder {
+  padding-left: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#banner {
+  height: 30vh;
+
+  display: flex;
+  z-index: 1;
+}
+
+#banner-text {
+  background-color: lightgreen;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#banner-img {
+  flex: 6;
+  z-index: 2;
+  background: lightgreen url(../images/black-frying-pan-with-spaghetti-sauce-near-brown-wooden-691114.jpg)
+    no-repeat center center/cover;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-right: 10vw solid transparent;
+  border-bottom: 30vh solid lightgreen;
+}
+
+aside {
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+aside p {
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+section {
+  justify-content: space-evenly;
+}
+
+.box {
+  height: 20vh;
+  width: 40vw;
+  background-color: rgba(182, 182, 182, 0.808);
+  border: 3px dashed var(--main-color);
+  border-radius: 5px;
+}
+
+article p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0 0 1rem;
+}
